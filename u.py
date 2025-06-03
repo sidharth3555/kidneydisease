@@ -31,11 +31,11 @@ try:
     if 'Support Vector Machine' in models:
         svm_model = models['Support Vector Machine']
         if hasattr(svm_model, 'predict_proba'):
-            st.write("✅ SVM Model loaded with predict_proba capability.")
+            st.write("✅ ")
         else:
             st.write("❌ SVM Model loaded WITHOUT predict_proba capability.")
-            st.write("This means the loaded .joblib file for SVM might be an older version, or there's a compatibility issue.")
-            st.write("Please ensure you've replaced the 'support_vector_machine_model.joblib' file with the latest one provided and restarted the app.")
+            # st.write("This means the loaded .joblib file for SVM might be an older version, or there's a compatibility issue.")
+            # st.write("Please ensure you've replaced the 'support_vector_machine_model.joblib' file with the latest one provided and restarted the app.")
     # --- END DIAGNOSTIC CHECK ---
 
 except FileNotFoundError as e:
